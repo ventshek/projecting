@@ -2,12 +2,6 @@
 
 # Tuomas Eerola - 2019
 
-echo '==== This script will enable Graphical User Interface'
-echo '==== on your Linux Server on Google ===='
-echo '==== and creates a user account that you can use'
-echo '==== with Remote Desktop Connection.'
-echo '===='
-
 if [ ! $# = 3 ]; then
   echo "Usage: $0 [-ud] gui_username gui_password"
   exit
