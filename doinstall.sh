@@ -15,7 +15,6 @@ sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 sudo ufw allow 25575
 sudo ufw allow 25565
-sudo apt-get install -y xdotool
 sudo apt-get install -y openjdk-8-jre-headless
 
 echo '==== Install packages ===='
@@ -23,4 +22,5 @@ wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec167
 mv server.jar minecraft_server_1.16.5.jar
 wget https://github.com/ventshek/projecting/raw/main/eula.txt
 wget https://github.com/ventshek/projecting/raw/main/server.properties
+wget https://github.com/ventshek/projecting/raw/main/ops.json
 java -Xms1024M -Xmx2048M -jar minecraft_server_1.16.5.jar nogui
