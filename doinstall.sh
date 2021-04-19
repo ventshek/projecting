@@ -21,5 +21,6 @@ echo '==== Install packages ===='
 wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
 mv server.jar minecraft_server_1.16.5.jar
 wget https://github.com/ventshek/projecting/raw/main/eula.txt
+wget https://github.com/ventshek/projecting/raw/main/server.properties
 java -Xms1024M -Xmx2048M -jar minecraft_server_1.16.5.jar nogui
 op TIMMYsam
