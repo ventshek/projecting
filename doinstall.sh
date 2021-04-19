@@ -10,21 +10,21 @@ echo '==== Password: ' $2
 echo ''
 
 echo '==== Upgrade system ===='
-sudo apt-get update
-sudo apt-get upgrade -y
+sudo apt-get -y update
+sudo apt-get -y upgrade 
+sudo apt-get -y dist-upgrade
+sudo ufw allow 25565
+sudo apt-get install -y xdotool
+sudo apt-get install -y openjdk-8-jre-headless
 
 echo '==== Install packages ===='
-sudo apt-get install -y gnome-shell
-sudo apt-get install -y ubuntu-gnome-desktop
-sudo apt-get install -y autocutsel
-sudo apt install -y xrdp
-sudo systemctl enable xrdp
-sudo apt-get install -y gnome-core
-sudo apt-get install -y gnome-panel
-sudo apt-get install -y synaptic
+wget https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar
+mv server.jar minecraft_server_1.16.5.jar
+java -Xms1024M -Xmx2048M -jar minecraft_server_1.16.5.jar nogui
+rm eula.txt
+cat > eula.txt
+eula=true
+xdotool key ctrl+d
+java -Xms1024M -Xmx2048M -jar minecraft_server_1.16.5.jar nogui
 
-touch ~/.Xresources
 
-sudo adduser  --disabled-password --gecos "GUI User" $1
-echo "$1:$2" | sudo chpasswd
-sudo /usr/sbin/usermod -aG sudo $1
