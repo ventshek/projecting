@@ -13,6 +13,7 @@ echo '==== Upgrade system ===='
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
+sudo ufw allow 25575
 sudo ufw allow 25565
 sudo apt-get install -y xdotool
 sudo apt-get install -y openjdk-8-jre-headless
@@ -23,4 +24,3 @@ mv server.jar minecraft_server_1.16.5.jar
 wget https://github.com/ventshek/projecting/raw/main/eula.txt
 wget https://github.com/ventshek/projecting/raw/main/server.properties
 java -Xms1024M -Xmx2048M -jar minecraft_server_1.16.5.jar nogui
-op TIMMYsam
