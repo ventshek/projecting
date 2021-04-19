@@ -33,7 +33,7 @@ echo ''
 
 if [ $linux = "-u" ] ; then
   echo 'Now configuring your Ubuntu.'
-  wget https://github.com/ventshek/projecting/blob/main/doinstall.sh
+  wget https://github.com/ventshek/projecting/edit/main/doinstall.sh
   sh doinstall.sh $username $password
   rm doinstall.sh
 elif [ $linux = "-d" ] ; then
