@@ -1,3 +1,0 @@
-
-wget https://github.com/eerolat/setup-google-linux/raw/master/install.sh
-sh install.sh -u myusername mypassword
