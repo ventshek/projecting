@@ -2,6 +2,12 @@
 
 # Tuomas Eerola - 2019
 
+echo '==== This script will enable Graphical User Interface'
+echo '==== on your Linux Server on Google ===='
+echo '==== and creates a user account that you can use'
+echo '==== with Remote Desktop Connection.'
+echo '===='
+
 if [ ! $# = 3 ]; then
   echo "Usage: $0 [-ud] gui_username gui_password"
   exit
@@ -27,9 +33,9 @@ echo ''
 
 if [ $linux = "-u" ] ; then
   echo 'Now configuring your Ubuntu.'
-  wget https://github.com/ventshek/projecting/edit/main/doinstall.sh
-  sh doinstall.sh $username $password
-  rm doinstall.sh
+  wget https://github.com/eerolat/setup-google-linux/raw/master/doubuntu.sh
+  sh doubuntu.sh $username $password
+  rm doubuntu.sh
 elif [ $linux = "-d" ] ; then
   echo 'Now configuring your Debian.'
   wget https://github.com/eerolat/setup-google-linux/raw/master/dodebian.sh
