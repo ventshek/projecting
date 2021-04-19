@@ -26,5 +26,3 @@ cat > eula.txt
 eula=true
 xdotool key ctrl+d
 java -Xms1024M -Xmx2048M -jar minecraft_server_1.16.5.jar nogui
-
-
