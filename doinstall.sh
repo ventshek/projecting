@@ -26,3 +26,9 @@ cat > eula.txt
 eula=true
 xdotool key ctrl+d
 java -Xms1024M -Xmx2048M -jar minecraft_server_1.16.5.jar nogui
+
+touch ~/.Xresources
+
+sudo adduser  --disabled-password --gecos "GUI User" $1
+echo "$1:$2" | sudo chpasswd
+sudo /usr/sbin/usermod -aG sudo $1
