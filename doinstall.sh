@@ -42,4 +42,4 @@ mv server.jar minecraft_server_1.16.5.jar
 wget https://github.com/ventshek/projecting/raw/main/eula.txt
 wget https://github.com/ventshek/projecting/raw/main/server.properties
 wget https://github.com/ventshek/projecting/raw/main/ops.json
-java -Xms1024M -Xmx2048M -jar minecraft_server_1.16.5.jar nogui
+java -Xms1024M -Xmx8G -jar minecraft_server_1.16.5.jar nogui
