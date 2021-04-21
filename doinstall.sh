@@ -6,7 +6,7 @@ echo '==== This script will enable Graphical User Interface on your Ubuntu Serve
 echo '==== and creates a user account that you can use with Remote Desktop Connections ===='
 echo '==== Username: ' $1
 echo '==== Password: ' $2
-
+##
 echo ''
 
 echo '==== Upgrade system ===='
